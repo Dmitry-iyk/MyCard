@@ -1,0 +1,204 @@
+{% extends 'mainapp/layout.html' %}
+
+{% load static %}
+
+{% block title %}DimaView{% endblock  %}
+
+{% block content %}
+<div class = "transition transition-1 is-active"></div>
+
+
+<div class = "big_body" id = "body_pr">    
+ 
+    {% comment %} first section {% endcomment %}
+    <div class = "body1" id = "hm">
+        <div class = "main_container">
+            <header>
+                <div class="container0">
+
+                    <div class = "container1">    
+                        <ul>
+                            <li>PROGRAMMER</li><img src="{%static 'mainapp/img/com.png' %}" alt = "comma" class = 'com'>
+                            <li>PHOTOGRAPHER</li><img src="{%static 'mainapp/img/com.png' %}" alt = "comma" class = 'com'>
+                            <li>ATHLETE</li>
+                        </ul>
+                    </div>
+
+                    <div class = "container2">    
+                        <ul id = "link">
+                            <a href = '{% url "home" %}' id = "get_href"><li id = "bt11">HOME</li></a>
+                            <a href = '{% url "about" %}' id = "get_href2"><li id = "bt22">ABOUT ME</li></a>
+                            <a href = '#sw_1'><li>PROJECTS</li></a>
+                        </ul>
+                    </div>
+
+                </div>
+            </header>
+
+            <div class="main">
+                <div class="avatar">
+
+                    <div class = "container4">    
+                        <img src="{%static 'mainapp/img/ava.jpg' %}" alt="" class="ava">
+                    </div>
+
+                    <div class = "name">
+                        <h1>DIMAVIEW</h1>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class = "links">
+                    <a id = "home" href = "https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fd_ch15a%3Futm_medium%3Dcopy_link&cc_key="><div class = "inst"><img src="{%static 'mainapp/img/inst.png' %}" style = "width: 40px; hight:40px;"></div></a>
+
+                    <a id = "home" href = "https://vk.com/dimach_025"><div class = "vk"><img src="{%static 'mainapp/img/vk.png' %}" style = "width: 40px; hight:40px;" ></div></a>
+
+                    <a id = "home" href = "mailto:chistohin1@mail.ru"><div class = "mail"><img src="{%static 'mainapp/img/mail.png' %}" style = "width: 40px; hight:40px;"></div></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    {% comment %} second section {% endcomment %}
+    <div class="header_project" id = "sw_1">
+        <div class = "ava_pr">
+            <img src="{%static 'mainapp/img/ava_pr.jpg' %}" class = "ava3" alt="ava_pr">
+            <a href = '#project_all' id = "home"><div class = "proj">PROJECTS</div></a>
+        </div>
+    </div>
+
+    <div class="main_project">
+        <article id = "project_all">
+            <div class = "content_proj">
+
+                <div class = "picture_1" id = "1_fil" >
+                    <a id = "project_filter" class = "popup1" href = "#popup_photo">
+                        <img src="{%static 'mainapp/img/photo_pr.jpg' %}" class = "ava_content_proj" alt="ava_pr">
+                        <div class = "word">PHOTO</div>
+                    </a>
+                </div>
+
+                <div class = "picture_2">
+                    <a id = "project_filter" href = "#popup_programming">
+                        <img src="{%static 'mainapp/img/prog_pr.jpg' %}" class = "ava_content_proj" id = "2_fil" alt="ava_pr">
+                        <a class = "go_home" href = "#hm"><img src="{%static 'mainapp/img/home.png' %}" class = "hom2"></a>
+                        <a id = "project_filter" href = "#popup_programming"><div class = "word2" id = "2_f">PROGRAMMING</div></a>
+                    </a>
+                </div>
+
+                <div class = "picture_3" id = "3_fil">
+                    <a id = "project_filter" href = "#popup_video">
+                        <img src="{%static 'mainapp/img/video_pr.jpg' %}" class = "ava_content_proj" alt="ava_pr">
+                        <div class = "word">VIDEO</div>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+    </div>
+
+    <div class = "main_project_2" id = "block_content">
+        <!--Модальные окна-->
+            
+        <!--1 Модальное окно-->
+        <div id = "popup_photo" class = "popup">
+                <a href = "#project_all" class = "popup_area" id = "hidden1"></a>
+                <div class= "popup_body">
+                    <div class= "popup_content">
+        
+                        <a href = "#project_all" class = "popup_close" id = "hid1">X</a>
+                        <div class = "popup_text">PHOTO PROJECTS</div>
+                        <!-- Slick слайдер-->
+                        <div class = "wrapper">
+                            <div class = "slider-1">
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/1.jpg' %}" alt="" >
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/2.jpg' %}" alt="" >
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/3.jpg' %}" alt="">
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/4.jpeg' %}" alt="" >
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/5.jpeg' %}" alt="" >
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/6.jpeg' %}" alt="" >
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/7.jpeg' %}" alt="" >
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/9.jpeg' %}" alt="" style = "width: 650px;">
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/11.jpeg' %}" alt="">
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/12.jpeg' %}" alt="">
+                                </div>
+                            </div>
+                            <!-- Подключение слайдера -->
+                            <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                            <script src = "{%static 'mainapp/js/slick.min.js' %}"></script>
+                            <script src = "{%static 'mainapp/js/script.js' %}"></script>
+                        </div>
+        
+                    </div>
+                </div>
+        </div>
+
+            <!--2 Модальное окно-->
+        <div id = "popup_programming" class = "popup">
+                <a href = "#project_all" class = "popup_area" id = "hidden2"></a>
+                <div class= "popup_body">
+                    <div class= "popup_content">
+                        <a href = "#project_all" class = "popup_close" id = "hid2">X</a>
+                        <div id = "close" class = "popup_text">PROGRAMMING PROJECTS</div>
+                        
+                        <div class = "wrapper">
+                            <div class = "slider-1">
+                                <div class = "slider_item">
+                                    <a href = "https://vk.com/dimach_025"><img src="{%static 'mainapp/img/prog_slider.png' %}" alt="" ></a>
+                                </div>
+                                <div class = "slider_item">
+                                    <img src="{%static 'mainapp/img/contuined.jpg' %}" alt="" >
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+
+            <!--3 Модальное окно-->
+        <div id = "popup_video" class = "popup">
+                <a href = "#project_all" class = "popup_area" id = "hidden3"></a>
+                <div id = "body_video" class= "popup_body">
+                    <div class= "popup_content">
+                        <a href = "#project_all" class = "popup_close" id = "hid3">X</a>
+                        <div id = "text_slider_2" class = "popup_text">VIDEO PROJECTS</div>
+                        
+                        <div class="slider_2">
+                            <div><iframe width="1280" height="720" src="https://www.youtube.com/embed/lmHdYkKYmuc?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="slider_vid" ></iframe></iframe></div>
+                            <span>
+                                <a href="//www.youtube.com/embed/lmHdYkKYmuc?enablejsapi=1" target="slider_vid"><img src="{%static 'mainapp/img/slider_pr1.jpg' %}"></a>
+                                <a href="//www.youtube.com/embed/YCTSafg3Ko0?enablejsapi=1" target="slider_vid"><img src="{%static 'mainapp/img/slider_pr2.jpg' %}"></a>
+                                <a href="//www.youtube.com/embed/5_KzFdVZfFg?enablejsapi=1" target="slider_vid"><img src="{%static 'mainapp/img/slider_pr3.jpg' %}"></a>
+                                <a href="//www.youtube.com/embed/5WNnn1-pvGk?enablejsapi=1" target="slider_vid"><img src="{%static 'mainapp/img/slider_pr4.jpg' %}"></a>
+                                <a href="//www.youtube.com/embed/aBD_6vamUsM?enablejsapi=1" target="slider_vid"><img src="{%static 'mainapp/img/slider_pr5.jpg' %}"></a>
+                            </span>
+                        </div>
+                    </div>
+                
+                </div>
+        </div>
+    </div>
+    <script src = "{%static 'mainapp/js/transition.js' %}"></script>
+</div>
+{% endblock  %}

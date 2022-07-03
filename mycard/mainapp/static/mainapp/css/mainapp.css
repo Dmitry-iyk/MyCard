@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Shadows+Into+Light&display=swap');
+
+html,
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100vh;
+}
+html {
+  height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Header страницы ------------------------------------------------------------------------------------------------------------------------ */
+.big_body{
+  background: linear-gradient(60deg, #151515 30%, #ff833d);
+  height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.body1 {
+  background: url('../css/fon.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 60px;
+}
+.body_about {
+  background: linear-gradient(60deg, #151515 30%, #ff833d);
+  height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.body_project {
+  overflow-x: hidden;
+  overflow-y:auto;
+  background: linear-gradient(60deg, #151515 30%, #ff833d);
+  height: 100%;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+#body_pr.stop { 
+  overflow: hidden;
+}
+#body_pr.active { 
+  overflow-x: hidden;
+  overflow-y:auto;
+}
+
+.contact {
+  margin: 5px;
+  position: relative;
+  top: 150px;
+  left: 100px;
+}
+.readme2 {
+  width: 800px;
+}
+.main_container {
+  align-items: center;
+  background: rgb(250, 204, 162, 0.5);
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px #0b0101;
+  position: relative;
+  bottom: 30px;
+}
+.container0 {
+  font-family: 'Contrail One', cursive;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin-top: 87px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 50px 30px;
+  font-size: 120%;
+}
+.container1 {
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+}
+.container2 {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#link {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -5px;
+}
+.links_about {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin-top: 50px;
+  position: relative;
+  top: 80px;
+}
+.mail_ab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.header_about {
+  justify-content: center;
+  margin-bottom: 200px;
+  height: 800px;
+}
+.header_project{
+  height: 100%;
+}
+
+header {
+  color: rgb(255, 255, 255);
+}
+
+header ul {
+  align-items: center;
+  list-style: none;
+  margin: 0; /* Обнуляем значение отступов */
+  padding: 4px; /* Значение полей */
+}
+header a {
+  text-decoration: none;
+}
+
+header ul a {
+  color: rgb(255, 255, 255);
+}
+
+header ul li {
+  display: inline;
+  margin-right: 5px;
+  padding: 3px;
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease;
+}
+.panel {
+  font-family: 'Contrail One', cursive;
+  display: flex;
+  font-size: 30px;
+  position: relative;
+  bottom: 20px;
+}
+.ava22 {
+  height: 110vh;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  position: relative;
+  bottom: 750px;
+}
+.cont1 {
+  font-family: 'Faster One', cursive;
+  font-size: 110px;
+}
+.cont2,
+.cont3 {
+  font-family: 'Contrail One', cursive;
+  font-size: 150%;
+  margin: 5px;
+  position: relative;
+  top: 60px;
+}
+.com {
+  filter: invert(1);
+  width: 50px;
+  position: relative;
+  top: -18px;
+}
+#home {
+  color: #ffffff;
+  text-decoration: none;
+}
+#home:hover {
+  color: #000000;
+  text-decoration: none;
+  transform: scale(1.07);
+  transition: all 0.4s ease;
+}
+.down:hover {
+  filter: invert(100%);
+  text-decoration: none;
+  transform: scale(1.07);
+  transition: all 0.4s ease;
+}
+header ul a:hover {
+  color: #000000;
+  text-decoration: none;
+  transform: scale(1.07);
+  transition: all 0.4s ease;
+}
+#link li:hover {
+  color: #000000;
+}
+.ava_pr {
+  height: 900px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Faster One', cursive;
+  font-size: 110px;
+}
+.proj {
+  position: relative;
+  bottom: 550px;
+}
+.ava3 {
+  width: 100%;
+  height: 100vh;
+}
+.panel_pr {
+  font-family: 'Contrail One', cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  position: relative;
+  bottom: 750px;
+  right: -10px;
+}
+.h_pr,
+.a_pr,
+.p_pr {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+/*Main - секция ----------------------------------------------------------------------------------------------------------------------------------*/
+.name {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+h1 {
+  font-family: 'Faster One', cursive;
+  font-size: 50px;
+}
+.ava {
+  width: 400px;
+  border-radius: 300px; /* Радиус скругления */
+  border: 4px solid rgb(0, 0, 0, 0.2); /* Параметры рамки */
+  /*box-shadow: 0 0 60px 1px rgb(0, 0, 0);*/
+}
+.main_about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 70px;
+  color: white;
+  font-family: 'Contrail One', cursive;
+  text-align: justify;
+}
+.readme1 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 310%;
+}
+.readme_ab {
+  font-size: 310%;
+}
+.read {
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 80px;
+  font-size: 100%;
+}
+.readme2 {
+  width: 1013px;
+  position: relative;
+  font-size: 250%;
+}
+.ab_me1 {
+  line-height: 1.2em;
+}
+.ab_me2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+.ab_me3 {
+  line-height: 1.2em;
+}
+
+.main_project {
+  margin-top:60px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-family: 'Contrail One', cursive;
+  font-size: 30px;
+}
+#project_all {
+  height: 0;
+}
+.content_proj {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ava_content_proj {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.word {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 53%;
+}
+.word2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 56.1%;
+}
+.go_home{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 95%;
+}
+.go_home:hover {
+  color: #000000;
+  text-decoration: none;
+  transform: scale(1.04);
+  transition: all 0.2s ease;
+}
+.hom{
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+}
+.hom2{
+  height: 30px;
+  width: 30px;
+}
+.picture_1,
+.picture_2,
+.picture_3 {
+  height: 100vh;
+}
+#project_hr {
+  color: #ffffff;
+  text-decoration: none;
+}
+#project_hr:hover {
+  color: #000000;
+  text-decoration: none;
+  transform: scale(1.07);
+  transition: all 0.4s ease;
+}
+#project_filter {
+  color: #ffffff;
+  text-decoration: none;
+}
+/*Модальные окна projects*/
+.main_project_2 {
+  scroll-behavior: smooth;
+  background: url('../css/picture_for_slider.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 0;
+}
+#block_content{
+  display: none;
+  opacity: 0;
+}
+#block_content.is-visible {
+  display: block;
+  animation: fadeInFromNone 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+#block_content.is-hidden {
+  animation: fadeOutFromBlock 0.5s ease-in-out;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutFromBlock {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.popup {
+  margin: 20px;
+  padding: 30px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.8s ease;
+  width: 100%;
+  height: 100%;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s all;
+  background: #000000b0;
+  width: 100%;
+  height: 100vh;
+  transition: all 1.5s ease;
+}
+.popup_area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#hid3 {
+  margin-top: 21px;
+  right: -20px;
+}
+.popup_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+}
+.popup_content {
+  color: #ffffff;
+  font-family: 'Contrail One', cursive;
+  max-width: 1500px;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.popup_close:hover {
+  color: #fff;
+}
+.popup_close {
+  position: absolute;
+  top: 2px;
+  right: -10px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.popup_text {
+  position: relative;
+  font-size: 20px;
+}
+/*Слайдер в project*/
+.wrapper {
+  height: 100%;
+  width: 1180px;
+  padding: 35px;
+  padding-bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+.slider_item img {
+  width: 900px;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.slider_item {
+  text-align: center;
+}
+
+/*Слайдер №1*/
+
+/*Костыль подгрузки*/
+.slider-1 .slide:not(:first-child) {
+  display: none;
+}
+/*устанавливаем все слайды в слайдере активными после инициализации slick-slider*/
+.slider-1 .slick-initialized .slide:not(:first-child) {
+  display: block;
+}
+.slider-1 {
+  position: relative;
+}
+.slider-1 .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 40px;
+}
+.slider-1 .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../img/slider_2.png') 0 0 / 100% no-repeat;
+}
+.slider-1 .slick-arrow.slick-next {
+  right: 0;
+  background: url('../img/slider.png') 0 0 / 100% no-repeat;
+}
+.slider-1 .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.slider-1 .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider-1 .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.slider-1 .slick-dots li.slick-active button {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+/*Слайдер №2*/
+.slider_2 {
+  position: relative;
+  margin: 20px;
+  justify-content: center;
+  border: 5px solid #000000;
+  background: #0000009a;
+}
+.slider_2 span {
+  margin: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 1000px;
+  height: 110px;
+  display: inline-block;
+  word-spacing: 1em; /* расстояние между картинками */
+  /* прокрутка миниатюр при необходимости */
+  overflow: auto;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.slider_2 a {
+  position: relative;
+  display: inline-block;
+  max-width: 120px; /* максимальная ширина миниатюр */
+  width: 25%; /* ширина миниатюр */
+  opacity: 0.9;
+  text-decoration: none;
+}
+.slider_2 a:hover {
+  opacity: 1;
+  transform: scale(1.07);
+  transition: all 0.4s ease;
+}
+.slider_2 a:not(:active):focus {
+  pointer-events: none;
+}
+.slider_2 a::before {
+  content: '';
+  position: absolute;
+  top: 0em;
+  right: 0em;
+  bottom: 0em;
+  left: 0em;
+  background: rgba(0, 0, 1, 0.1);
+  transition: background 0s 9999999s;
+}
+.slider_2 span:active a::before {
+  background: rgba(0, 0, 0, 0);
+  transition: background 0s;
+}
+.slider_2 img {
+  max-width: 100%;
+  vertical-align: middle; /* убрать нижний отступ до рамки под картинкой */
+}
+#text_slider_2 {
+  margin-top: 20px;
+}
+/* Подвал ---------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  transition: all 0.4s ease;
+}
+.footer_about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 140px;
+}
+.gost{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/cont2.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.readme3 {
+  font-family: 'Faster One', cursive;
+  font-size: 90px;
+  color: #121212;
+  width: 800px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  padding-right: 100px;
+  transition: all 0.4s ease;
+  position: relative;
+  right: -30px;
+}
+.form_ab {
+  width: 750px;
+  background: rgba(52, 52, 52, 0.387);
+  border: 2px solid rgba(80, 80, 80, 0.791);
+  padding: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 2px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+.form_ab {
+  position: relative;
+}
+.form_ab::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.555) url('../img/loading3.gif') center / 50px
+    no-repeat;
+  transition: all 0.5s ease 0s;
+}
+.form_ab._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+input,
+textarea {
+  background: rgba(219, 218, 218, 0.318);
+  width: 602px;
+  padding: 10px;
+  color: #ffffff;
+  font-family: 'Shadows Into Light', 'Caveat', cursive;
+  font-size: 20px;
+}
+textarea {
+  background: rgba(219, 218, 218, 0.318);
+  width: 602px;
+  height: 200px;
+  padding: 10px;
+}
+.name_ab._error {
+  box-shadow: 0px 0px 15px black;
+}
+.email_ab._error {
+  box-shadow: 0px 0px 15px black;
+}
+.subject_ab._error {
+  box-shadow: 0px 0px 15px black;
+}
+.text_ab._error {
+  box-shadow: 0px 0px 15px black;
+}
+.name_ab,
+.email_ab,
+.subject_ab,
+.text_ab {
+  border: 2px solid rgba(80, 80, 80, 0.791);
+  margin-top: 20px;
+}
+.down{
+  height: 30px;
+  width: 30px;
+  margin-top: 6px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+button {
+  width: 70px;
+}
+.button1,
+.button2 {
+  margin: 10px;
+}
+button {
+  padding: 10px;
+  background: rgb(000, 000, 000, 0.2);
+  font-family: 'Contrail One', cursive;
+  color: #ffffff;
+}
+.big_bt:hover{
+  transform: scale(0.97);
+  transition: all 0.1s ease;
+}
+.links a:hover {
+  transform: scale(1.07);
+  transition: all 0.4s ease;
+}
+.inst :hover,
+.vk:hover,
+.mail:hover {
+  filter: brightness(0%);
+  transform: scale(1.07);
+  transition: all 0.4s ease;
+}

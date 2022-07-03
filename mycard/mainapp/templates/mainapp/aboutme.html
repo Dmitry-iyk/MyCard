@@ -1,0 +1,107 @@
+{% extends 'mainapp/layout.html' %}
+
+{% load static %}
+
+{% block title %}AboutMe{% endblock  %}
+
+{% block content %}
+
+<div class = "body_about">
+    <div class = "transition transition-1 is-active"></div>
+
+    {% comment %} Контент {% endcomment %}
+    {% comment %} <script src = "{%static 'mainapp/js/script_for_url.js' %}"></script> {% endcomment %}
+    <div class = "header_about" id = "hm2">
+        <img src="{%static 'mainapp/img/ava22.png' %}" class = "ava22" alt="ava22">
+        
+        <div class = "cont">
+
+            <div class = "panel">    
+                <a id = "home" href = '{% url "home" %}'><div id = "away" class = "h_ab" style = "margin-right: 50px; margin-left: 50px; ">HOME</div></a>
+            </div>
+
+            <div class = "mail_ab">
+                <a href = '#scrol' id = "home"><div class = "cont1">CONTACT</div></a>
+                <div class = "cont2">Mail: chistohin1@mail.ru</div>
+                <div class = "cont3">Mobile Phone: +79998723775</div>
+            </div>
+
+            <div class = "links_about">
+                <a href = "https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fd_ch15a%3Futm_medium%3Dcopy_link&cc_key="><div class = "inst"><img src="{%static 'mainapp/img/inst.png' %}" style = "width: 55px; "></div></a>
+
+                <a href = "https://vk.com/dimach_025"><div class = "vk"><img src="{%static 'mainapp/img/vk.png' %}" style = "width: 55px; " ></div></a>
+
+                <a href = "mailto:chistohin1@mail.ru"><div class = "mail"><img src="{%static 'mainapp/img/mail.png' %}" style = "width: 55px; "></div></a>
+            </div>
+        
+        </div>
+            
+    </div>
+
+    <div class="main_about" id = "scrol">
+        <div class = "readme1">DMITRY CHISTOKHIN - PROGRAMMER,PHOTOGRAPHER & ATHLETE</div>
+        <div class = "readme_ab">ABOUT ME</div>
+        <div class = "read">_________</div>
+
+        <div class = "readme2">
+            <div class = "ab_me1">I'm Chistokhin Dmitry, a freelance multidisciplinary programmer based in Russia. I study, programming and in my free time take pictures 
+            </div>
+        
+            <div class = "ab_me2">
+            Since 2019, I have been studying at Moscow University in the technical direction. My studies are coming to an end and I decided to apply all the knowledge I gained and seriously pursue my future profession. This portfolio site is my first project. Now I am actively looking for a job in the IT field
+            </div>
+        
+            <div class = "ab_me3">
+            I love web - programming, data and interesting case and working on fun projects to try out some new techniques and things i always wanted to do.
+            If you are interested in my work or if you like to collaborate or just say hello, feel free to contact me <a href = "#foot"><img src="{%static 'mainapp/img/down.png' %}" class = "down"></a>
+            </div>
+        </div>
+                
+    </div>
+
+    <div class = "footer_about">
+        <div class = "gost">
+            <div class = "readme3" id = "foot">LET'S GET IN CONTACT </div>
+            <a class = "go_home" href = "#hm2"><img src="{%static 'mainapp/img/home.png' %}" class = "hom"></a>
+            <!-- Форма -->
+            <script src = "{%static 'mainapp/js/validate_form.js' %}"></script>
+            <div class = "form1">
+                <form action = "/send" class = "form_ab" id = 'form' method = 'POST'>
+                    {% csrf_token %}
+                    <!-- Имя -->
+                    <div class = "name_ab">
+                        <input tabindex = "1" placeholder = "Name*" class = "form_input _name _req" type="text" name="name*" id = "form" value = ""/>
+                    </div>
+                    </br>
+                    <!-- Мыло -->
+                    <div class = "email_ab">
+                        <input tabindex = "2" placeholder = "Email*" class = "form_input _email _req" type="text" name="email*" value = ""/>
+                    </div>
+                    </br>
+                    <!-- Объект -->
+                    <div class = "subject_ab">
+                        <input tabindex = "3" class = "form_input _subject _req" placeholder = "Subject*" type="text" name="subject*" value = ""/>
+                    </div>
+                    </br>
+                    <!-- Текст -->
+                    <div class = "text_ab">
+                        <textarea tabindex = "4" class = "form_input _text _req" placeholder = "Text*" name="text1*" cols = "30" rows = "10"></textarea>
+                    </div>
+                    </br>
+                    <!-- Кнопки -->
+                    <div class = "buttons">
+                        <div class = "button2">
+                            <button class = "big_bt" type = "reset">Сlear</button>
+                        </div>
+
+                        <div class = "button1">
+                            <button class = "big_bt" type = "submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src = "{%static 'mainapp/js/transition2.js' %}"></script>
+</div>
+{% endblock  %}
