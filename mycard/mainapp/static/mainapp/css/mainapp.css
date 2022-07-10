@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@400;700&family=Russo+One&family=Shadows+Into+Light&display=swap');
 
 html,
 body {
@@ -159,12 +160,14 @@ h6 {
   width: 430px;
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .container2 {
   width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3px;
 }
 #link {
   width: 400px;
@@ -186,7 +189,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .header_about {
   justify-content: center;
@@ -253,6 +256,24 @@ header ul li {
   position: relative;
   top: 60px;
 }
+
+.result_cont{
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  margin: 10px;
+  position: center;
+  text-transform: uppercase;
+}
+.result_cont2{
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+  position: center;
+  text-transform: uppercase;
+}
+.result_cont, .result_cont2{
+  color: #121212;
+}
+
 .com {
   filter: invert(1);
   width: 50px;

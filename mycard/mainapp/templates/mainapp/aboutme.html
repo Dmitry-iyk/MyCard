@@ -15,10 +15,17 @@
         <img src="{%static 'mainapp/img/ava22.png' %}" class = "ava22" alt="ava22">
         
         <div class = "cont">
-
             <div class = "panel">    
                 <a id = "home" href = '{% url "home" %}'><div id = "away" class = "h_ab" style = "margin-right: 50px; margin-left: 50px; ">HOME</div></a>
             </div>
+
+            {% comment %} Условие вывода благодарности после отправки формы {% endcomment %}
+            {% if name_ms %}
+                <div class = "result_cont">Thanks {{name_ms}}!</div>
+                <div class = "result_cont2">Your message has been sent, see you soon...</div>
+            {% elif warning  %}
+                <div class = "result_cont">{{warning}}</div>
+            {% endif %}
 
             <div class = "mail_ab">
                 <a href = '#scrol' id = "home"><div class = "cont1">CONTACT</div></a>
@@ -61,31 +68,31 @@
 
     <div class = "footer_about">
         <div class = "gost">
-            <div class = "readme3" id = "foot">LET'S GET IN CONTACT </div>
+            <div class = "readme3" id = "foot">LET'S GET IN CONTACT</div>
             <a class = "go_home" href = "#hm2"><img src="{%static 'mainapp/img/home.png' %}" class = "hom"></a>
             <!-- Форма -->
             <script src = "{%static 'mainapp/js/validate_form.js' %}"></script>
             <div class = "form1">
-                <form action = "/send" class = "form_ab" id = 'form' method = 'POST'>
+                <form action = '{% url "about" %}' class = "form_ab" id = 'form' method = 'post'>
                     {% csrf_token %}
                     <!-- Имя -->
                     <div class = "name_ab">
-                        <input tabindex = "1" placeholder = "Name*" class = "form_input _name _req" type="text" name="name*" id = "form" value = ""/>
+                        <input tabindex = "1" placeholder = "Name*" class = "form_input _name _req" type="text" name="name-ms" id = "form" required value = ""/>
                     </div>
                     </br>
                     <!-- Мыло -->
                     <div class = "email_ab">
-                        <input tabindex = "2" placeholder = "Email*" class = "form_input _email _req" type="text" name="email*" value = ""/>
+                        <input tabindex = "2" placeholder = "Email*" class = "form_input _email _req" type="email" name="email-ms" required value = ""/>
                     </div>
                     </br>
                     <!-- Объект -->
                     <div class = "subject_ab">
-                        <input tabindex = "3" class = "form_input _subject _req" placeholder = "Subject*" type="text" name="subject*" value = ""/>
+                        <input tabindex = "3" class = "form_input _subject _req" placeholder = "Subject*" type="text" name="subject-ms" required value = ""/>
                     </div>
                     </br>
                     <!-- Текст -->
                     <div class = "text_ab">
-                        <textarea tabindex = "4" class = "form_input _text _req" placeholder = "Text*" name="text1*" cols = "30" rows = "10"></textarea>
+                        <textarea tabindex = "4" class = "form_input _text _req" placeholder = "Text*" name="text-ms" cols = "30" rows = "10" required></textarea>
                     </div>
                     </br>
                     <!-- Кнопки -->
