@@ -9,7 +9,7 @@ def avatar(request):
 
 
 def about(request):
-    # Доделать отправку
+    # Отправка формы
     if request.method == "POST":
         name_ms = request.POST.get('name-ms')
         email_ms = request.POST.get('email-ms')
